@@ -1,0 +1,121 @@
+@import '../../../styles/mixins.sass';
+@import '../../../styles/variables.sass';
+
+.benzinga_1456x180_container {
+    border: 1px solid black;
+    @include center-col;
+    justify-content: flex-start;
+    width: 1456px;
+    height: 180px;
+    padding: 9px 12px;
+    .rows {
+        @include center-row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 12px;
+        .group {
+            @include center-col;
+            gap: 9px;
+            .row {
+                @include center-row;
+                justify-content: flex-start;
+                width: 100%;
+                height: 75px;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+                img {
+                    height: 3.1rem;
+                    margin: 0 .9rem 0 1rem;
+                }
+                #masterImg {
+                    border-radius: 10px;
+                }
+                #shellImg {
+                    height: 2.85rem;
+                }
+                .col-1 {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    width: 300px;
+                    height: 45px;
+                    h2 {
+                        font-size: 1.275rem;
+                    }
+                    p {
+                        color: #444;
+                        font-size: .825rem;
+                    }
+                }
+                .col-2 {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    height: 40px;
+                    width: 98px;
+                    p {
+                        color: #777;
+                        font-size: .775rem;
+                    }
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                    .wrap {
+                        display: flex;
+                        gap: .4rem;
+                        img {
+                            height: 1.35rem;
+                            width: 1.35rem;
+                            margin: 0;
+                        }
+                    }
+                }
+                .col-3 {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    height: 42px;
+                    width: 90px;
+                    p {
+                        color: #777;
+                        font-size: .775rem;
+                    }
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                }
+                .col-4 {
+                    @include right;
+                    justify-self: flex-end;
+                    width: 120px;
+                    margin-right: 15px;
+                    button {
+                        border: none;
+                        outline: none;
+                        font-size: .8rem;
+                        color: white;
+                        background-color: #53C29E;
+                        border-radius: 1.8rem;
+                        padding: .55rem .95rem;
+                        cursor: pointer;
+                    }
+                }
+                #raisedCol {
+                    margin-left: -1rem;
+                    margin-right: 1rem;
+                }
+                #investFromCol_1 {
+                    margin-left: -.35rem;
+                    margin-right: .35rem;
+                }
+                #investFromCol_2 {
+                    margin-left: .725rem;
+                    margin-right: -.725rem;
+                }
+            }
+        }
+    }
+}
