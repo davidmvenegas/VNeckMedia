@@ -68,7 +68,7 @@
                     opacity: .8;
                 }
                 .separator-active {
-                    animation: lineAcross 2s ease .25s forwards;
+                    animation: lineAcross 1s ease .2s forwards;
                 }
                 .items {
                     @include center-row;
@@ -125,15 +125,15 @@
                             text-shadow: 1px 2px 2px $yellow-primary;
                         }
                     }
-                    .item-active-1 {animation: showItem 1s ease .75s forwards}
-                    .item-active-2 {animation: showItem 1s ease 1s forwards}
-                    .item-active-3 {animation: showItem 1s ease 1.25s forwards}
-                    .item-active-4 {animation: showItem 1s ease 1.5s forwards}
+                    .item-active-1 {animation: showItem 1s ease .5s forwards}
+                    .item-active-2 {animation: showItem 1s ease .75s forwards}
+                    .item-active-3 {animation: showItem 1s ease 1s forwards}
+                    .item-active-4 {animation: showItem 1s ease 1.25s forwards}
                 }
             }
         }
         .dropdown-open {
-            animation: openDropdown .65s ease forwards;
+            animation: openDropdown .5s ease forwards;
         }
     }
 }
