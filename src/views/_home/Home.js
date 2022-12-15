@@ -24,8 +24,12 @@ function Home() {
 
                 <div className={dropdownIsOpen.Benzinga ? "dropdown dropdown-open" : "dropdown"}>
                     <div className="top" onClick={() => setDropdownIsOpen({...dropdownIsOpen, Benzinga: !dropdownIsOpen.Benzinga})}>
-                        <img src={BenzingaLogo} alt="Logo" />
-                        <h2>Benzinga</h2>
+                        <div className="logo-img-wrap">
+                            <img src={BenzingaLogo} alt="Logo" />
+                        </div>
+                        <div className="dropdown-title-wrap">
+                            <h2>Benzinga</h2>
+                        </div>
                         <div className="icon-wrap">
                             {dropdownIsOpen.Benzinga ? <FaChevronUp id="icon" /> : <FaChevronDown id="icon" />}
                         </div>
@@ -54,8 +58,12 @@ function Home() {
                 </div>
                 <div className={dropdownIsOpen.Arkhaus ? "dropdown dropdown-open" : "dropdown"}>
                     <div className="top" onClick={() => setDropdownIsOpen({...dropdownIsOpen, Arkhaus: !dropdownIsOpen.Arkhaus})}>
-                        <img src={ArkhausLogo} alt="Logo" />
-                        <h2>Arkhaus</h2>
+                        <div className="logo-img-wrap">
+                            <img src={ArkhausLogo} alt="Logo" />
+                        </div>
+                        <div className="dropdown-title-wrap">
+                            <h2>Arkhaus</h2>
+                        </div>
                         <div className="icon-wrap">
                             {dropdownIsOpen.Arkhaus ? <FaChevronUp id="icon" /> : <FaChevronDown id="icon" />}
                         </div>
@@ -67,18 +75,18 @@ function Home() {
                                 <HiOutlineExternalLink id='icon'/>
                                 <h2>600 x 100</h2>
                             </div>
-                            <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-2" : "item"} onClick={() => navigate('/arkhaus/600x200')}>
+                            {/* <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-2" : "item"} onClick={() => navigate('/arkhaus/600x200')}>
                                 <HiOutlineExternalLink id='icon'/>
                                 <h2>600 x 200</h2>
-                            </div>
-                            <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-3" : "item"} onClick={() => navigate('/arkhaus/600x500')}>
+                            </div> */}
+                            {/* <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-3" : "item"} onClick={() => navigate('/arkhaus/600x500')}>
                                 <HiOutlineExternalLink id='icon'/>
                                 <h2>600 x 500</h2>
-                            </div>
-                            <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-4" : "item"} onClick={() => navigate('/arkhaus/1456x180')}>
+                            </div> */}
+                            {/* <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-4" : "item"} onClick={() => navigate('/arkhaus/1456x180')}>
                                 <HiOutlineExternalLink id='icon'/>
                                 <h2>1456 x 180</h2>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
