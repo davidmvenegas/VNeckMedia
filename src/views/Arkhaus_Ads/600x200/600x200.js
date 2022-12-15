@@ -9,8 +9,8 @@ function _600x200() {
 
     return (
         <div className="iframe-wrap">
-            <h2 id='title-of-iframe'>BENZINGA: 600x200</h2>
-            <div className='benzinga_600x200_container'>
+            <h2 id='title-of-iframe'>ARKHAUS: 600x200</h2>
+            <div className='arkhaus_600x200_container'>
                 <div className="rows">
                     <div className="row">
                         <img src={QuantLogo} alt="Logo" />

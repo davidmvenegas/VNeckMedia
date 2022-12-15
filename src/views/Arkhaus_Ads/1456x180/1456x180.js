@@ -11,8 +11,8 @@ function _1456x180() {
 
     return (
         <div className="iframe-wrap">
-            <h2 id='title-of-iframe'>BENZINGA: 1456x180</h2>
-            <div className='benzinga_1456x180_container'>
+            <h2 id='title-of-iframe'>ARKHAUS: 1456x180</h2>
+            <div className='arkhaus_1456x180_container'>
                 <div className="rows">
 
                     <div className="group">

@@ -4,9 +4,9 @@
 .home-container {
     @include center-col;
     justify-content: flex-start;
-    background: linear-gradient(90deg, rgba(6,7,7,0.8) 0%, rgba(255,175,0,0.8) 80%, rgba(255,175,0,0.8) 100%);
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+    width: auto;
+    padding-bottom: 5rem;
     .logo-wrap {
         margin: 4rem 0 6rem;
         img {
@@ -23,7 +23,7 @@
             height: 6.5rem;
             width: 100%;
             background-color: whitesmoke;
-            border-radius: .8rem;
+            border-radius: .65rem;
             box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
             .top {
                 @include center-row;
@@ -68,7 +68,7 @@
                     opacity: .8;
                 }
                 .separator-active {
-                    animation: lineAcross 1s ease .2s forwards;
+                    animation: lineAcross .8s ease .2s forwards;
                 }
                 .items {
                     @include center-row;
@@ -125,10 +125,15 @@
                             text-shadow: 1px 2px 2px $yellow-primary;
                         }
                     }
-                    .item-active-1 {animation: showItem 1s ease .5s forwards}
-                    .item-active-2 {animation: showItem 1s ease .75s forwards}
-                    .item-active-3 {animation: showItem 1s ease 1s forwards}
-                    .item-active-4 {animation: showItem 1s ease 1.25s forwards}
+                    .item-active-1 {animation: showItem 1s ease .4s forwards}
+                    .item-active-2 {animation: showItem 1s ease .6s forwards}
+                    .item-active-3 {animation: showItem 1s ease .8s forwards}
+                    .item-active-4 {animation: showItem 1s ease 1s forwards}
+                    #linkArkhaus {
+                        &::before {
+                            background: radial-gradient(circle, #00558e70 0%, rgba(0,0,0,0) 65%, rgba(0,0,0,0) 100%);
+                        }
+                    }
                 }
             }
         }
@@ -147,4 +152,37 @@
 }
 @keyframes showItem {
     100% {opacity: 1; pointer-events: all}
+}
+
+// Page Wraps
+.iframe-wrap {
+    @include center-col;
+    height: 100vh;
+    gap: 2.75rem;
+    #title-of-iframe {
+        font-size: 2.25rem;
+        font-weight: 600;
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0,0,0);
+    }
+    #back-to-home-button {
+        height: 3rem;
+        width: 7.25rem;
+        font-size: 1.275rem;
+        font-weight: 600;
+        color: #222;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        border: none;
+        outline: none;
+        border-radius: .35rem;
+        transition: all .2s ease;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.025);
+        }
+        &:active {
+            transform: scale(.975);
+        }
+    }
 }

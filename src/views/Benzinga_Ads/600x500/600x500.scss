@@ -2,7 +2,8 @@
 @import '../../../styles/variables.sass';
 
 .benzinga_600x500_container {
-    border: 1px solid black;
+    
+    background-color: white;
     @include center-col;
     justify-content: flex-start;
     width: 600px;

@@ -13,8 +13,8 @@ function _600x500() {
 
     return (
         <div className="iframe-wrap">
-            <h2 id='title-of-iframe'>BENZINGA: 600x500</h2>
-            <div className='benzinga_600x500_container'>
+            <h2 id='title-of-iframe'>ARKHAUS: 600x500</h2>
+            <div className='arkhaus_600x500_container'>
                 <div className="top">
                     <div className="left">
                         <BsPatchCheckFill id="icon"/>

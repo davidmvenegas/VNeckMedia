@@ -1,25 +1,57 @@
 @import '../../../styles/mixins.sass';
 @import '../../../styles/variables.sass';
 
-.benzinga_600x200_container {
+.arkhaus_600x500_container {
     
     background-color: white;
     @include center-col;
     justify-content: flex-start;
     width: 600px;
-    height: 200px;
-    padding: 9px;
+    height: 500px;
+    padding: 10px 12px;
 
+    // TOP SECTION
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 2px 0;
+        .left {
+            @include center-row;
+            gap: .25rem;
+            #icon {
+                color: #6224C2;
+                font-size: .85rem;
+            }
+            p {
+                color: #999;
+                font-size: .85rem;
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .right {
+            p {
+                color: #999;
+                font-size: .85rem;
+            }
+        }
+    }
+
+    // ROWS SECTION
     .rows {
         @include center-col;
         align-items: flex-start;
         width: 100%;
-        gap: 10px;
+        margin-top: 10px;
+        gap: 12px;
         .row {
             @include center-row;
             justify-content: flex-start;
             width: 100%;
-            height: 85px;
+            height: 95px;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
             img {
@@ -102,6 +134,25 @@
                     padding: .5rem .925rem;
                     cursor: pointer;
                 }
+            }
+        }
+    }
+
+    // BOTTOM SECTION
+    .bottom {
+        @include right;
+        align-items: flex-end;
+        width: 100%;
+        height: 32px;
+        .right {
+            @include center-row;
+            gap: .25rem;
+            p {
+                font-size: .865rem;
+                font-weight: 600;
+            }
+            #icon {
+                font-size: 1.25rem;
             }
         }
     }
