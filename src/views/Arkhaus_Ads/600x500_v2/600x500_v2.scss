@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Mitr:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import '../../../styles/mixins.sass';
+@import '../../../styles/variables.sass';
+
+.arkhaus_600x500_v2_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 600px;
+    height: 500px;
+    padding: 10px 8px 6px;
+    gap: 12px;
+    .top {
+        text-align: center;
+        p {
+            font-family: 'Lacquer';
+            font-size: 24px;
+            line-height: .8;
+        }
+        h2 {
+            font-family: 'Mitr';
+            font-size: 2.75rem;
+            span {
+                display: inline-block;
+                color: #003366;
+                text-shadow: 1px 1px 0px rgba(0, 0, 0);
+                letter-spacing: 1px;
+                transition: color .35s ease;
+                opacity: .95;
+                &:last-of-type {
+                    margin-right: 16px;
+                }
+            }
+            #letter_F {animation: jiggle 2.5s ease-in-out infinite; animation-delay: 0s;}
+            #letter_L {animation: jiggle 2.5s ease-in-out infinite; animation-delay: .1s;}
+            #letter_O {animation: jiggle 2.5s ease-in-out infinite; animation-delay: .2s;}
+            #letter_A {animation: jiggle 2.5s ease-in-out infinite; animation-delay: .3s;}
+            #letter_T {animation: jiggle 2.5s ease-in-out infinite; animation-delay: .4s;}
+            #letter_I {animation: jiggle 2.5s ease-in-out infinite; animation-delay: .5s;}
+            #letter_N {animation: jiggle 2.5s ease-in-out infinite; animation-delay: .6s;}
+            #letter_G {animation: jiggle 2.5s ease-in-out infinite; animation-delay: .7s;}
+            @keyframes jiggle {
+                from {transform: scale3d(1, 1, 1)}
+                35% {transform: scale3d(1, 1, 1)}
+                40% {transform: scale3d(1.25, 0.75, 1)}
+                48% {transform: scale3d(0.75, 1.2, 1)}
+                56% {transform: scale3d(1.15, 0.85, 1)}
+                68% {transform: scale3d(.95, 1.05, 1)}
+                75% {transform: scale3d(1.05, .95, 1)}
+                80% {transform: scale3d(1, 1, 1)}
+                to {transform: scale3d(1, 1, 1)}
+            }
+        }
+    }
+    .video-wrap {
+        position: relative;
+        video {
+            border-radius: 6px;
+        }
+        .video-dark {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 6px;
+            background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,.4) 100%);
+        }
+        .learn-more-wrap {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            #learn-more {
+                @include center-row;
+                position: relative;
+                outline: none;
+                border: none;
+                font-family: 'Mitr';
+                font-size: 18px;
+                font-weight: 500;
+                color: #003366;
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                padding: 2px 15px 6px;
+                border-radius: 6px;
+                line-height: 2;
+                gap: 10px;
+                cursor: pointer;
+                img {
+                    height: 28px;
+                    margin-top: 4px;
+                    animation: bounce 2.25s infinite;
+                }
+                @keyframes bounce {
+                    0%, 60%, 80%, 100% {transform: translateX(0);} 
+                    20% {transform: translateX(-4px);} 
+                    40% {transform: translateX(4px);}
+                }
+            }
+        }
+        .about_wrap {
+            position: absolute;
+            left: 14px;
+            top: 14px;
+            width: calc(100% - 28px);
+            backdrop-filter: blur(4px);
+            .about {
+                position: relative;
+                @include center;
+                min-height: 64px;
+                font-family: 'Mitr';
+                font-size: 25px;
+                text-align: center;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.4);
+                border: 3px solid rgba(0, 0, 0, 0.25);
+                border-radius: 7px;
+                padding: 10px 16px;
+                p {
+                    font-weight: 400;
+                    span {
+                        font-family: 'Playfair Display';
+                        font-weight: 400;
+                    }
+                }
+            }
+            #about_1, #about_2, #about_3, #about_4 {
+                position: absolute;
+            }
+            #about_1 {animation: about_1_anim 12s ease infinite}
+            #about_2 {animation: about_2_anim 12s ease infinite}
+            #about_3 {animation: about_3_anim 12s ease infinite}
+            #about_4 {animation: about_4_anim 12s ease infinite}
+            @keyframes about_1_anim {
+                0% {opacity: 0}
+                1%, 23% {opacity: 1}
+                25%, 100% {opacity: 0}
+            }
+            @keyframes about_2_anim {
+                0%, 25% {opacity: 0}
+                26%, 48% {opacity: 1} 
+                50%, 100% {opacity: 0}
+            }
+            @keyframes about_3_anim {
+                0%, 50% {opacity: 0}
+                51%, 73% {opacity: 1} 
+                75%, 100% {opacity: 0}
+            }
+            @keyframes about_4_anim {
+                0%, 74% {opacity: 0}
+                75%, 98% {opacity: 1} 
+                100% {opacity: 0}
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 2px;
+        .left {
+            @include center-row;
+            gap: 5px;
+            margin-left: 1px;
+            #icon {
+                color: #003366;
+                font-size: 14px;
+            }
+            p {
+                color: #999;
+                font-size: 14px;
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .right {
+            margin-right: 2px;
+            p {
+                color: #999;
+                font-size: 14px;
+            }
+        }
+    }
+}

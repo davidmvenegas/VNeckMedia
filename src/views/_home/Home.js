@@ -71,22 +71,22 @@ function Home() {
                     <div className="body">
                         <div className={dropdownIsOpen.Arkhaus ? "separator separator-active" : "separator"} />
                         <div className="items">
-                            <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-1" : "item"} onClick={() => navigate('/arkhaus/600x100')}>
+                            <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-1" : "item"} onClick={() => navigate('/arkhaus/600x100_v1')}>
                                 <HiOutlineExternalLink id='icon'/>
-                                <h2>600 x 100</h2>
+                                <h2>600 x 100 <span>v1</span></h2>
                             </div>
-                            {/* <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-2" : "item"} onClick={() => navigate('/arkhaus/600x200')}>
+                            <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-2" : "item"} onClick={() => navigate('/arkhaus/600x100_v2')}>
                                 <HiOutlineExternalLink id='icon'/>
-                                <h2>600 x 200</h2>
-                            </div> */}
-                            {/* <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-3" : "item"} onClick={() => navigate('/arkhaus/600x500')}>
+                                <h2>600 x 100 <span>v2</span></h2>
+                            </div>
+                            <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-3" : "item"} onClick={() => navigate('/arkhaus/600x500_v1')}>
                                 <HiOutlineExternalLink id='icon'/>
-                                <h2>600 x 500</h2>
-                            </div> */}
-                            {/* <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-4" : "item"} onClick={() => navigate('/arkhaus/1456x180')}>
+                                <h2>600 x 500 <span>v1</span></h2>
+                            </div>
+                            <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-4" : "item"} onClick={() => navigate('/arkhaus/600x500_v2')}>
                                 <HiOutlineExternalLink id='icon'/>
-                                <h2>1456 x 180</h2>
-                            </div> */}
+                                <h2>600 x 500 <span>v2</span></h2>
+                            </div>
                         </div>
                     </div>
                 </div>
