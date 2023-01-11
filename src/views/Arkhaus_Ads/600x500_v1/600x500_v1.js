@@ -1,7 +1,6 @@
 import './600x500_v1.scss';
-import ArkhausVideo from '../../../assets/Arkhaus/ArkHAUS_1.mp4';
-import RightArrow from '../../../assets/Arkhaus/right_arrow.png';
-import { BsPatchCheckFill } from 'react-icons/bs';
+import ArkhausVideo from '../../../assets/Arkhaus/Arkhaus.mp4';
+import RightArrow from '../../../assets/Arkhaus/Arrow_Right.png';
 import { useNavigate } from 'react-router-dom';
 
 function _600x500_v1() {
@@ -11,7 +10,12 @@ function _600x500_v1() {
         <div className="iframe-wrap">
             <h2 id='title-of-iframe'>ARKHAUS: 600x500 <span>v1</span></h2>
             <a className='arkhaus_600x500_v1_container' href="https://wefunder.com/arkhaus" target="_blank" rel='noreferrer'>
-                <div className="top">
+                <div className="video-wrap">
+                    <video width="100%" height="100%" autoPlay={true} loop={true}>
+                        <source src={ArkhausVideo} type="video/mp4" />
+                    </video>
+                </div>
+                <div className="right">
                     <p>Invest in the World's First</p>
                     <h2>
                         <span id='letter_F'>F</span>
@@ -24,35 +28,16 @@ function _600x500_v1() {
                         <span id='letter_G'>G</span>
                         Social Club
                     </h2>
-                </div>
-                <div className="video-wrap">
-                    <video width="100%" height="100%" autoPlay={true} loop={true}>
-                        <source src={ArkhausVideo} type="video/mp4" />
-                    </video>
-                    <div className="video-dark"></div>
-                    <div className="about_wrap">
-                        <div className="about">
-                            <p id='about_1'><span>"Best Startups To Buy"</span> — NASDAQ</p>
-                            <p id='about_2'>Year 1 Memberships Already SOLD OUT</p>
-                            <p id='about_3'>Coming to NYC, CA, Paris, Istanbul, Dubai...</p>
-                            <p id='about_4'>Over 1 Million USD Already Invested</p>
-                        </div>
-                    </div>
-                    <div className="learn-more-wrap">
-                        <button id="learn-more">
-                            <span>Learn More</span>
-                            <img src={RightArrow} alt="->" />
-                        </button>
-                    </div>
-                </div>
-                <div className="bottom">
-                    <div className="left">
-                        <BsPatchCheckFill id="icon" />
-                        <p>What's an <span>accredited investor?</span></p>
-                    </div>
-                    <div className="right">
-                        <p>Disclosure</p>
-                    </div>
+                    <ul>
+                        <li>"Best Startups To Buy" &nbsp;<span> — NASDAQ</span></li>
+                        <li>SOLD OUT Membership</li>
+                        <li>International Expansion planned</li>
+                        <li>Founders from Bear Sterns and LVX Luxary</li>
+                    </ul>
+                    <button id="invest-now">
+                        <span>Invest Now</span>
+                        <img src={RightArrow} alt="->" />
+                    </button>
                 </div>
             </a>
             <button id='back-to-home-button' onClick={() => navigate('/')}>Back</button>

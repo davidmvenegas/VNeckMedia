@@ -11,7 +11,6 @@ import Benzinga1456x180 from './views/Benzinga_Ads/1456x180/1456x180';
 import Arkhaus600x100v1 from './views/Arkhaus_Ads/600x100_v1/600x100_v1';
 import Arkhaus600x100v2 from './views/Arkhaus_Ads/600x100_v2/600x100_v2';
 import Arkhaus600x500v1 from './views/Arkhaus_Ads/600x500_v1/600x500_v1';
-import Arkhaus600x500v2 from './views/Arkhaus_Ads/600x500_v2/600x500_v2';
 
 
 function App() {
@@ -28,7 +27,6 @@ function App() {
         <Route path="/arkhaus/600x100_v1" element={<Arkhaus600x100v1/>} />
         <Route path="/arkhaus/600x100_v2" element={<Arkhaus600x100v2/>} />
         <Route path="/arkhaus/600x500_v1" element={<Arkhaus600x500v1/>} />
-        <Route path="/arkhaus/600x500_v2" element={<Arkhaus600x500v2/>} />
       </Routes>
     </BrowserRouter>
   );

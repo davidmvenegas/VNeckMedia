@@ -83,10 +83,6 @@ function Home() {
                                 <HiOutlineExternalLink id='icon'/>
                                 <h2>600 x 500 <span>v1</span></h2>
                             </div>
-                            <div id='linkArkhaus' className={dropdownIsOpen.Arkhaus ? "item item-active-4" : "item"} onClick={() => navigate('/arkhaus/600x500_v2')}>
-                                <HiOutlineExternalLink id='icon'/>
-                                <h2>600 x 500 <span>v2</span></h2>
-                            </div>
                         </div>
                     </div>
                 </div>
